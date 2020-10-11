@@ -1,4 +1,6 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_facebook_responsive_ui/config/palette.dart';
 
 class ProfileAvatar extends StatelessWidget {
   final String imageUrl;
@@ -12,6 +14,29 @@ class ProfileAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Stack(
+      children: [
+        CircleAvatar(
+          radius: 20.0,
+          backgroundColor: Colors.grey[200],
+          backgroundImage: CachedNetworkImageProvider(imageUrl),
+        ),
+        isActive
+            ? Positioned(
+                right: 0.0,
+                bottom: 7.0,
+                child: Container(
+                  height: 15.0,
+                  width: 15.0,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(7.0),
+                    color: Palette.online,
+                    border: Border.all(color: Colors.white, width: 2.0),
+                  ),
+                ),
+              )
+            : SizedBox.shrink(),
+      ],
+    );
   }
 }

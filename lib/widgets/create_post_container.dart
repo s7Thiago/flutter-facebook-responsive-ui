@@ -1,6 +1,6 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
+import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
 
 class CreatePostContainer extends StatelessWidget {
   final User currentUser;
@@ -19,13 +19,7 @@ class CreatePostContainer extends StatelessWidget {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                radius: 20.0,
-                backgroundColor: Colors.grey[200],
-                backgroundImage: CachedNetworkImageProvider(
-                  currentUser.imageUrl,
-                ),
-              ),
+              ProfileAvatar(imageUrl: currentUser.imageUrl),
               const SizedBox(width: 8.0),
               Expanded(
                 child: TextField(
