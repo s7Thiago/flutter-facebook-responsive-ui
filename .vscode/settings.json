@@ -5,6 +5,7 @@
         "appbar",
         "horiz",
         "ondemand",
+        "unfocus",
         "wireframe"
     ]
 }
