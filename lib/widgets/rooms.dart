@@ -8,8 +8,8 @@ class Rooms extends StatelessWidget {
   final List<User> onlineUsers;
 
   const Rooms({
-    Key key,
-    @required this.onlineUsers,
+    Key? key,
+    required this.onlineUsers,
   }) : super(key: key);
 
   @override
@@ -64,7 +64,7 @@ class _CreateRoomButton extends StatelessWidget {
       color: Colors.white,
       borderSide: BorderSide(
         width: 3.0,
-        color: Colors.blueAccent[100],
+        color: Colors.blueAccent[100]!,
       ),
       textColor: Palette.facebookBlue,
       child: Row(

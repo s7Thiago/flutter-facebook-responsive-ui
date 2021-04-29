@@ -37,9 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class _HomeScreenMobile extends StatelessWidget {
-  final TrackingScrollController scrollController;
+  final TrackingScrollController? scrollController;
 
-  const _HomeScreenMobile({Key key, this.scrollController}) : super(key: key);
+  const _HomeScreenMobile({Key? key, this.scrollController}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -105,9 +105,9 @@ class _HomeScreenMobile extends StatelessWidget {
 }
 
 class _HomeScreenDesktop extends StatelessWidget {
-  final TrackingScrollController scrollController;
+  final TrackingScrollController? scrollController;
 
-  const _HomeScreenDesktop({Key key, this.scrollController}) : super(key: key);
+  const _HomeScreenDesktop({Key? key, this.scrollController}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Row(

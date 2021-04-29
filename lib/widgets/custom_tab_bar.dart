@@ -8,10 +8,10 @@ class CustomTabBar extends StatelessWidget {
   final bool isBottomIndicator;
 
   const CustomTabBar({
-    Key key,
-    @required this.icons,
-    @required this.selectedIndex,
-    @required this.onTap,
+    Key? key,
+    required this.icons,
+    required this.selectedIndex,
+    required this.onTap,
     this.isBottomIndicator = false,
   }) : super(key: key);
 

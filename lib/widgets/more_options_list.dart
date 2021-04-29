@@ -18,8 +18,8 @@ class MoreOptionsList extends StatelessWidget {
   final User currentUser;
 
   MoreOptionsList({
-    Key key,
-    @required this.currentUser,
+    Key? key,
+    required this.currentUser,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -55,10 +55,10 @@ class _Option extends StatelessWidget {
   final String label;
 
   const _Option({
-    Key key,
-    @required this.icon,
-    @required this.color,
-    @required this.label,
+    Key? key,
+    required this.icon,
+    required this.color,
+    required this.label,
   }) : super(key: key);
 
   @override

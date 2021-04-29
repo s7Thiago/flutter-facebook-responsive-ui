@@ -6,8 +6,8 @@ class UserCard extends StatelessWidget {
   final User user;
 
   const UserCard({
-    Key key,
-    @required this.user,
+    Key? key,
+    required this.user,
   }) : super(key: key);
 
   @override
