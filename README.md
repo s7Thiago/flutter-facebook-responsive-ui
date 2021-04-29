@@ -1,6 +1,6 @@
 # Flutter Page Transition
 
-An app developed aim show how easy is make custom page transitions with Flutter
+An app developed aim show a Facebook inspired UI design.
 
 ## Project Status
 
@@ -8,14 +8,13 @@ This project is just a personal showcase, done with de aim of register what i ha
 
 ## Project Screen Shots
 
-|Project UI|
-|----------|
-|![](assets/app.gif)|
+| Project UI          |
+| ------------------- |
+| ![](assets/app.gif) |
 
-|responsiveness|
-|----------|
-|![](assets/responsiveness.gif)|
-
+| Layout Responsiveness          |
+| ------------------------------ |
+| ![](assets/responsiveness.gif) |
 
 ## Installation and Setup Instructions
 
